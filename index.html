@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>독도 아카이브 - 대한민국의 아름다운 섬</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;700&display=swap');
+        body { font-family: 'Pretendard', sans-serif; }
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1610915621820-226846061386?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-anchor text-blue-600 text-2xl"></i>
+                    <span class="text-xl font-bold tracking-tight">DOKDO ARCHIVE</span>
+                </div>
+                <div class="flex items-center gap-4 sm:gap-6">
+                    <a href="index.html" class="text-blue-600 font-bold"><i class="fa-solid fa-house"></i></a>
+                    <a href="01.html" class="text-slate-600 hover:text-blue-600 transition-colors text-sm font-medium">내용 정리</a>
+                    <a href="02.html" class="text-slate-600 hover:text-blue-600 transition-colors text-sm font-medium">역사 연표</a>
+                    <a href="03.html" class="px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-medium hover:bg-blue-700 transition-colors">문의하기</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient h-[70vh] flex items-center justify-center text-center px-4">
+        <div class="max-w-3xl">
+            <h2 class="text-blue-400 font-bold tracking-widest mb-4">BEAUTIFUL ISLAND OF KOREA</h2>
+            <h1 class="text-4xl md:text-6xl text-white font-bold mb-6 leading-tight">
+                우리 땅 독도,<br>그 가치와 역사를 기록하다
+            </h1>
+            <p class="text-slate-200 text-lg md:text-xl mb-8 font-light">
+                가장 먼저 아침을 맞이하는 섬, 독도에 대한 모든 지식과 사료를 한곳에서 확인하세요.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#explore" class="px-8 py-3 bg-white text-blue-900 font-bold rounded-lg hover:bg-slate-100 transition-all">시작하기</a>
+                <a href="02.html" class="px-8 py-3 bg-blue-600/20 backdrop-blur-sm border border-white/30 text-white font-bold rounded-lg hover:bg-blue-600/40 transition-all">역사 살펴보기</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="explore" class="max-w-7xl mx-auto px-4 py-20 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">아카이브 둘러보기</h2>
+            <p class="text-slate-500">독도의 지리, 역사, 그리고 현재를 기록한 상세 페이지로 안내합니다.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Card 1: Content Summary -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 card-hover transition-all duration-300">
+                <div class="h-48 bg-blue-100 flex items-center justify-center">
+                    <i class="fa-solid fa-map-location-dot text-6xl text-blue-500"></i>
+                </div>
+                <div class="p-8">
+                    <span class="text-blue-600 font-bold text-sm">01. GEOGRAPHY</span>
+                    <h3 class="text-2xl font-bold mt-2 mb-4">독도 내용 정리</h3>
+                    <p class="text-slate-600 mb-6 line-clamp-3">
+                        독도의 지리적 위치, 기후, 생태계 및 경제적 가치를 정리했습니다. 왜 독도가 전략적 요충지인지 확인해 보세요.
+                    </p>
+                    <a href="01.html" class="inline-flex items-center text-blue-600 font-bold hover:gap-2 transition-all">
+                        자세히 보기 <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 2: Timeline -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 card-hover transition-all duration-300">
+                <div class="h-48 bg-indigo-100 flex items-center justify-center">
+                    <i class="fa-solid fa-clock-rotate-left text-6xl text-indigo-500"></i>
+                </div>
+                <div class="p-8">
+                    <span class="text-indigo-600 font-bold text-sm">02. HISTORY</span>
+                    <h3 class="text-2xl font-bold mt-2 mb-4">역사적 사실 연표</h3>
+                    <p class="text-slate-600 mb-6 line-clamp-3">
+                        15세기 세종실록지리지부터 현대의 독도 수호 활동까지, 독도가 우리 영토임을 증명하는 역사를 시기별로 정리했습니다.
+                    </p>
+                    <a href="02.html" class="inline-flex items-center text-indigo-600 font-bold hover:gap-2 transition-all">
+                        연표 확인하기 <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3: Contact -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 card-hover transition-all duration-300">
+                <div class="h-48 bg-slate-100 flex items-center justify-center">
+                    <i class="fa-solid fa-envelope-open-text text-6xl text-slate-500"></i>
+                </div>
+                <div class="p-8">
+                    <span class="text-slate-600 font-bold text-sm">03. CONTACT</span>
+                    <h3 class="text-2xl font-bold mt-2 mb-4">문의 및 소통</h3>
+                    <p class="text-slate-600 mb-6 line-clamp-3">
+                        독도 아카이브에 대한 의견이나 궁금한 점이 있으신가요? 관리자에게 직접 메시지를 보낼 수 있습니다.
+                    </p>
+                    <a href="03.html" class="inline-flex items-center text-slate-800 font-bold hover:gap-2 transition-all">
+                        문의하기 <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Info Section -->
+    <section class="bg-blue-900 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 italic">"독도는 역사적, 지리적, 국제법적으로 명백한 대한민국의 고유 영토입니다."</h2>
+                    <p class="text-blue-100 mb-8 leading-relaxed">
+                        우리는 감정적인 대응을 넘어, 논리적이고 객관적인 자료를 통해 독도의 가치를 세계에 알려야 합니다. 본 아카이브는 교육적 목적으로 제작되었으며 모든 자료는 공공 사료를 바탕으로 합니다.
+                    </p>
+                    <div class="flex gap-8">
+                        <div>
+                            <span class="block text-4xl font-bold">1454</span>
+                            <span class="text-blue-300 text-sm">세종실록지리지 기록</span>
+                        </div>
+                        <div>
+                            <span class="block text-4xl font-bold">1900</span>
+                            <span class="text-blue-300 text-sm">대한제국 칙령 41호</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1548191265-cc70d3d45ba1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="독도의 모습" class="rounded-2xl shadow-2xl">
+                    <div class="absolute -bottom-6 -left-6 bg-white text-slate-900 p-6 rounded-xl shadow-xl hidden md:block">
+                        <p class="font-bold text-lg">천연기념물 제336호</p>
+                        <p class="text-sm text-slate-500">독도 천연보호구역</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="flex justify-center gap-6 mb-8 text-2xl text-slate-400">
+                <i class="fa-brands fa-facebook hover:text-blue-600 cursor-pointer"></i>
+                <i class="fa-brands fa-instagram hover:text-pink-500 cursor-pointer"></i>
+                <i class="fa-brands fa-youtube hover:text-red-600 cursor-pointer"></i>
+            </div>
+            <p class="text-slate-500 text-sm">본 웹사이트는 독도 교육 자료를 바탕으로 제작된 포트폴리오 프로젝트입니다.</p>
+            <p class="text-slate-400 text-xs mt-2">&copy; 2026 Dokdo Archive. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
